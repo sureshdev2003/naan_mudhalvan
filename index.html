@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bike site</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="path"></div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">AboutUs</a></li>
-        </ul>
-        <div class="bikenail">
-            <li><img src="file:///C:/Users/ELCOT/Desktop/suresh%20project/sunday%20project/image/1jpg.png" onclick="big('file:///C:/Users/ELCOT/Desktop/suresh%20project/sunday%20project/image/1jpg.png');path('#e5e5e5');bg('purple')"></li>
-            <li><img src="file:///C:/Users/ELCOT/Desktop/suresh%20project/sunday%20project/image/4jpg.png" onclick="big('file:///C:/Users/ELCOT/Desktop/suresh%20project/sunday%20project/image/4jpg.png');path('white');bg('linear-gradient(70deg,yellow,green)')"></li>
-            <li><img src="file:///C:/Users/ELCOT/Desktop/suresh%20project/sunday%20project/image/3jpg.png" onclick="big('file:///C:/Users/ELCOT/Desktop/suresh%20project/sunday%20project/image/3jpg.png');path('#e5e5e5');bg('rgba(255,0,0,0.8)')"></li>
-        </div>
-        <div class="big-img">
-            <img src="file:///C:/Users/ELCOT/Desktop/suresh%20project/sunday%20project/image/2jpg.png" class="big">
-        </div>
-        <div class="content">
-            <p>&#x1f525;Let's Ride&#x1f525;</p><br>
-            <h1>don't Fear Dying<br>&nbsp;Fear Not Living</h1>
-            <h5>&#x1f49d;For Bike Lovers & Bike Riders&#x1f49d;</h5>
-        </div>
+      <div class="path"></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">AboutUs</a></li>
+      </ul>
+      <div class="bikenail">
+        <li>
+          <img
+            src="image/1jpg.png"
+            onclick="big('image/1jpg.png');path('#e5e5e5');bg('purple')"
+          />
+        </li>
+        <li><img src="image/2jpg.png" onclick="big('image/2jpg.png')" /></li>
+        <li>
+          <img
+            src="image/3jpg.png"
+            onclick="big('image/3jpg.png');path('#e5e5e5');bg('rgba(255,0,0,0.8)')"
+          />
+        </li>
+      </div>
+      <div class="big-img">
+        <img src="image/4jpg.png" class="big" />
+      </div>
+      <div class="content">
+        <p>&#x1f525;Let's Ride&#x1f525;</p>
+        <br />
+        <h1>don't Fear Dying<br />&nbsp;Fear Not Living</h1>
+        <h5>&#x1f49d;For Bike Lovers & Bike Riders&#x1f49d;</h5>
+      </div>
     </div>
-</body>
-<script>
-    function big(img){
-        document.querySelector('.big').src= img;
-
+  </body>
+  <script>
+    function big(img) {
+      document.querySelector(".big").src = img;
     }
-    function path(color){
-        const path=document.querySelector('.path');
-        path.style.background=color;
+    function path(color) {
+      const path = document.querySelector(".path");
+      path.style.background = color;
     }
-    function bg(background){
-        const bg=document.querySelector('.container');
-        bg.style.background=background;
+    function bg(background) {
+      const bg = document.querySelector(".container");
+      bg.style.background = background;
     }
-    </script>
+  </script>
 </html>
